@@ -24,7 +24,7 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
         navigator.share({
             title: `Dados do covid - 19 ${country}`,
             text: textCovid19,
-            url: 'https://covid-19-beige.vercel.app/'
+            url: 'https://felippepg.github.io/covid-19'
         })
     }
 
@@ -34,7 +34,7 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
 
     const renderShareButton = (
         <div>
-            <Button size="small" variant="contained" color="primary" onClick={shareInfo}>
+            <Button variant="contained" color="primary" onClick={shareInfo}>
                 Compartilhar
             </Button>
         </div>
